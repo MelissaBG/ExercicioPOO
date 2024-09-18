@@ -4,7 +4,7 @@ package org.example;
 public class Desenvolvedor extends Funcionario {
 
     private static final double PERCENTUAL_BONUS = 0.10;
-    private static final double BONUS_ADICIONAL = 100.0;
+    private static final double BONUS_ADICIONAL = 300.0;
 
     public Desenvolvedor(String nome, double salario) {
         super(nome, salario);

@@ -26,7 +26,7 @@ public abstract class Funcionario implements Exibivel {
     }
 
     public double calcularBonusComPercentualEValorFixo(double percentual, double bonusAdicional) {
-        return salario * percentual + bonusAdicional ;
+        return salario * percentual + bonusAdicional;  // Aqui é onde o ajuste foi feito
     }
 
     @Override
@@ -35,8 +35,9 @@ public abstract class Funcionario implements Exibivel {
         System.out.println("Salario: " + getSalario());
         System.out.println("Bônus: " + calcularBonus());
     }
+
     public void exibirBonusCustomizado(String tipo, double valorBonus) {
-        System.out.printf("Bônus customizado para ", tipo, valorBonus);
+        System.out.printf("Bônus customizado para %s: %.2f\n", tipo, valorBonus);
     }
 
 }
